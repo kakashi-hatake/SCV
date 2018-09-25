@@ -2,7 +2,7 @@
 pragma solidity ^0.4.18;
 // written for Solidity version 0.4.18 and above that doesn't break functionality
 contract Voting {
-  event Added Candidate(uint candidateID);
+  event AddedCandidate(uint candidateID);
 
   struct Voter {
     bytes32 uid;
@@ -63,7 +63,7 @@ contract Voting {
   }
 
   function getNumOfCandidates() public view returns(uint) {
-    return numCandidate;
+    return getNumCandidate;
   }
 
   // returns candidate information, including its ID, name, and party
